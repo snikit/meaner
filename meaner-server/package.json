@@ -1,0 +1,20 @@
+{
+  "name": "meaner-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start_for_docker": "node index.js",
+    "start:docker": "docker run -p 1221:1221 meaner-server:1.0 ",
+    "build:docker": "docker build -t meaner-server:1.0 ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1"
+  }
+}
